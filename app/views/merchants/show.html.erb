@@ -1,7 +1,70 @@
-<h1>Merchant Dashboard</h1>
-<div id="merchant-links">
-  <%= link_to 'My Items', "/merchants/#{@merchant.id}/items" %>
+
+<div id="page-banner">
+
+  <div id ="merchant-details">
+    <%= @merchant.name %>
+  </div>
+
+  <div id="merchant-links">
+
+    <%= link_to "Dashboard", "/merchants/#{@merchant.id}", class: "dashboard-link"%>
+
+    <%= link_to 'My Items', "/merchants/#{@merchant.id}/items",class: "items-link" %>
+
+    <%= link_to 'My Invoices', "/merchants/#{@merchant.id}/invoices",class: "invoices-link" %>
+
+  </div>
+
 </div>
-<div id ="merchant-details">
-  <p><%= @merchant.name %></p>
+
+<div id="dashboard-content">
+
+  <div id="dashboard-content-left">
+
+    <div class="content-column-title">
+      Items Ready to Ship
+    </div>
+
+    <div class="content-column-main">
+      <p class="item-ready-to-ship">
+        Gold Ring - Invoice #254 - Monday, July 18, 2019
+      </p>
+      <p class="item-ready-to-ship">
+        Silver Ring - Invoice #254 - Monday, July 18, 2019
+      </p>
+      <p class="item-ready-to-ship">
+        Hoop Earrings - Invoice #254 - Monday, July 18, 2019
+      </p>
+      <p class="item-ready-to-ship">
+        Hair Clip - Invoice #254 - Monday, July 18, 2019
+      </p>
+    </div>
+
+  </div>
+
+  <div id="dashboard-content-right">
+
+    <div class="content-column-title">
+      Favorite Customers
+    </div>
+
+    <div class="content-column-main">
+      <ol>
+        <li class="favorite-customer">
+          Sally Shopper - 6732 Purchases
+        </li>
+        <li class="favorite-customer">
+          Sally Shopper - 6732 Purchases
+        </li>
+        <li class="favorite-customer">
+          Sally Shopper - 6732 Purchases
+        </li>
+        <li class="favorite-customer">
+          Sally Shopper - 6732 Purchases
+        </li>
+      </ol>
+    </div>
+
+  </div>
+
 </div>
