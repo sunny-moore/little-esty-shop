@@ -22,4 +22,11 @@
     <div id="main-content">
       <%= yield %>
     </div>
+    <footer>
+      <span>
+      <% githubsearch = GithubSearch.new %>
+        <p>Merged Pull Requests: <%=githubsearch.pull_request_information %></p>
+        <%= link_to 'Books Index', '/books' %>
+      </span>
+    </footer>
 </html>
