@@ -22,4 +22,9 @@
     <div id="main-content">
       <%= yield %>
     </div>
+    <footer>
+      <span>
+        <p>Merged Pull Requests: <%=@githubsearch.pull_request_information %></p>
+      </span>
+    </footer>
 </html>
