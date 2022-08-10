@@ -120,7 +120,13 @@ GEM
     orderly (0.1.1)
       capybara (>= 1.1)
       rspec (>= 2.14)
+<<<<<<< Updated upstream
     pg (1.4.2)
+=======
+    pg (1.4.3)
+    pg (1.4.3-x64-mingw32)
+    pg (1.4.3-x86-mingw32)
+>>>>>>> Stashed changes
     popper_js (2.11.5)
     pry (0.14.1)
       coderay (~> 1.1)
